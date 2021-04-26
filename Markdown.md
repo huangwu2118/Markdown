@@ -6,7 +6,8 @@
 
 #### 图片链接：
 
-![大数据](https://www.ruanyifeng.com/blogimg/asset/2017/bg2017122701.jpg)
+![小姐姐](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201811%2F04%2F20181104173830_ehlgu.thumb.700_0.jpg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622039243&t=ec6c2fbb57a66123d9665e86422cb94a)
+![谷歌](11.png)
 
 
 
@@ -15,21 +16,21 @@
 
 
 > 块引用
-> > 第一层
+> > 111111
 > >
-> > > 第二层
+> > > 222222
 
 
 
 
 
 1. 第一项：
-    - 第一个元素
-    - 第二个元素
+    - 1111111
+    - 2222222
     
 2. 第二项：
-    - 第一个元素
-    - 第二个元素
+    - 3333333
+    - 4444444
     
     
     
@@ -57,16 +58,33 @@
 ~~~java
 //两数之和
 class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> hashtable = new HashMap<Integer, Integer>();
-        for (int i = 0; i < nums.length; ++i) {
-            if (hashtable.containsKey(target - nums[i])) {
-                return new int[]{hashtable.get(target - nums[i]), i};
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode *head = nullptr, *tail = nullptr;
+        int carry = 0;
+        while (l1 || l2) {
+            int n1 = l1 ? l1->val: 0;
+            int n2 = l2 ? l2->val: 0;
+            int sum = n1 + n2 + carry;
+            if (!head) {
+                head = tail = new ListNode(sum % 10);
+            } else {
+                tail->next = new ListNode(sum % 10);
+                tail = tail->next;
             }
-            hashtable.put(nums[i], i);
+            carry = sum / 10;
+            if (l1) {
+                l1 = l1->next;
+            }
+            if (l2) {
+                l2 = l2->next;
+            }
         }
-        return new int[0];
+        if (carry > 0) {
+            tail->next = new ListNode(carry);
+        }
+        return head;
     }
-}
+};
 ~~~
 
