@@ -6,7 +6,7 @@
 
 #### 图片链接：
 
-![小姐姐](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201811%2F04%2F20181104173830_ehlgu.thumb.700_0.jpg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622039243&t=ec6c2fbb57a66123d9665e86422cb94a)
+![小姐姐](https://p.nanrenwo.net/uploads/allimg/180524/8472-1P524111347-52.jpg)
 ![谷歌](11.png)
 
 
